@@ -1,6 +1,5 @@
 .customplus {
 	color: #5c865e;
-	//padding: 5px;
 	font-size: 40px;
 	width: 30px;
 	height: 30px;
@@ -151,7 +150,8 @@ body {
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
 	/* margin-left: 10px;
-            margin-right: 10px; */
+			margin-right: 10px; */
+	padding-top: 44px;
 }
 
 .topnav {
@@ -160,6 +160,8 @@ body {
 	font-size: 14px;
 	position: fixed;
 	width: 100%;
+	top: 0;
+	z-index: 15;
 }
 
 .thumbnail1 {
@@ -288,14 +290,6 @@ body {
 	.column {
 		width: 100%;
 	}
-	.topnav.responsive {
-		position: relative;
-	}
-	.topnav.responsive .icon {
-		position: absolute;
-		right: 0;
-		top: 0;
-	}
 	.topnav.responsive a {
 		float: none;
 		display: block;
@@ -309,9 +303,7 @@ body {
 		float: right;
 		display: block;
 	}
-	.topnav.responsive {
-		position: relative;
-	}
+
 	.topnav.responsive .icon {
 		position: absolute;
 		right: 0;
@@ -470,4 +462,18 @@ u {
 	background-color: black;
 	border: none;
 	color: white;
+}
+
+.landing-img {
+	position: relative;
+}
+
+.landing-title {
+	position: absolute;
+    z-index: 12;
+    background: black;
+    left: 15px;
+    bottom: 15px;
+    padding: 10px;
+    color: white;
 }
